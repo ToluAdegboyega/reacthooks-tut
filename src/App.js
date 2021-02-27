@@ -49,9 +49,11 @@ function App() {
   return (
     <div className="App">
 
-     <DataFetchingTwo />
+     
      
      {/* 
+     <DataFetchingTwo />
+     
      <DataFetchingOne />
 
       <CountContext.Provider value={{ countState: count, countDispatch: dispatch }} >
