@@ -8,12 +8,14 @@ import ComponentAuseReducer from './components/ComponentAuseReducer';
 import ComponentBuseReducer from './components/ComponentBuseReducer';
 import ComponentC from './components/ComponentC';
 import ComponentCuseReducer from './components/ComponentCuseReducer';
+import Counter from './components/useRef/Counter';
 import CounterOne from './components/CounterOne';
 import CounterThree from './components/CounterThree';
 import CounterTwo from './components/CounterTwo';
 import DataFetching from './components/DataFetching';
 import DataFetchingOne from './components/DataFetchingOne';
 import DataFetchingTwo from './components/DataFetchingTwo';
+import FocusInput from './components/FocusInput';
 import HookCounter from './components/HookCounter';
 import HookCounterFour from './components/HookCounterFour';
 import HookCounterOne from './components/HookCounterOne';
@@ -23,11 +25,14 @@ import HookMouse from './components/HookMouse';
 import IntervalClassCounter from './components/IntervalClassCounter';
 import IntervalHookCounter from './components/IntervalHookCounter';
 import MouseContainer from './components/MouseContainer';
+import ParentComponent from './components/ParentComponent/ParentComponent';
+import ClassTimer from './components/useRef/ClassTimer';
+import HookTimer from './components/useRef/HookTimer';
 
 export const UserContext = React.createContext()
 export const ChannelContext = React.createContext()
 
-export const CountContext = React.createContext()
+export const CountContext = React.createContext() 
 
 // const initialState = 0
 // const reducer = (state, action) => {
@@ -49,11 +54,18 @@ function App() {
   return (
     <div className="App">
 
-     
+     <ClassTimer/>
+     <HookTimer/>
      
      {/* 
+     <FocusInput/>
+
+     <Counter/>
+
+     <ParentComponent/>
+
      <DataFetchingTwo />
-     
+
      <DataFetchingOne />
 
       <CountContext.Provider value={{ countState: count, countDispatch: dispatch }} >
