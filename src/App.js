@@ -58,10 +58,12 @@ function App() {
   return (
     <div className="App">
 
-     <UserForm/>
-     <UserFormOne/>
+    
      
      {/* 
+      <UserForm/>
+      <UserFormOne/>
+
      <CounterOne/>
      <CounterTwo/>
 
